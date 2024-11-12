@@ -4,6 +4,7 @@ const Navbar = () => {
   return (
     <div>
       Navbar
+      <h2>Hellow World</h2>
     </div>
   )
 }
