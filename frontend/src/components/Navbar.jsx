@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import NavLogo from "../assets/navLogo.png";
+import NavLogo from "../assets/Logo.png";
 import { IoMenu } from "react-icons/io5";
 import { IoMdClose } from "react-icons/io";
 
@@ -13,7 +13,7 @@ const Navbar = () => {
 
   return (
     <nav className="px-6 md:px-0 flex justify-between md:justify-around items-center w-full ">
-      <img src={NavLogo} alt="Nav Logo" className="w-7 sm:w-10" />
+      <img src={NavLogo} alt="Nav Logo" className="sm:w-10 w-8 md:w-16" />
       <div
         className={`${
           isOpen ? "block" : "hidden"
@@ -42,8 +42,8 @@ const Navbar = () => {
           </li>
         </ul>
         <div className="btns absolute top-0 left-[40%] pt-2 md:left-0 flex md:relative  justify-center items-center gap-3">
-          <Link to="/">Complain</Link>
-          <Link to="/">Donate</Link>
+          <Link to="/" className="md:border md:border-[#00529B] md:border-solid  md:font-bold md:px-6 md:py-2 text-[#00529B] bg-white hover:text-white  hover:bg-[#00529B] ">Complain</Link>
+          <Link to="/" className="border md:border-[#00529B] md:border-solid  font-bold md:px-6 md:py-2 px-2 py-1 bg-[#00529B] text-white hover:bg-white  hover:text-[#00529B] " >Donate</Link>
         </div>
       </div>
 
