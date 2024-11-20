@@ -1,10 +1,12 @@
-import React from 'react'
-import HeroSection from '../components/HeroSection'
+import React from 'react';
+import HeroSection from '../components/Home/HeroSection';
+import JoinUsSection from '../components/Home/JoinUs';
 
 const Home = () => {
   return (
     <div>
        <HeroSection />
+      <JoinUsSection/>
     </div>
   )
 }
