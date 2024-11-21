@@ -12,14 +12,14 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="px-6 md:px-0 flex justify-between md:justify-around items-center w-full ">
+    <nav className="px-6  bg-white  md:px-0 flex justify-between md:justify-around items-center w-full py-2 md:py-3 ">
       <img src={NavLogo} alt="Nav Logo" className="sm:w-10 w-8 md:w-16" />
       <div
         className={`${
           isOpen ? "block" : "hidden"
-        } md:flex md:items-center md:justify-start w-full md:w-auto mt-4 md:mt-0`}
+        } md:flex md:items-center md:justify-around w-full md:w-auto mt-4 md:mt-0`}
       >
-        <ul className="flex flex-col absolute left-[43%] pt-10 md:relative md:left-0 md:pt-0 justify-center items-center  md:flex-row md:space-x-6 sm:mr-[100px] md:mr-[160px] lg:mr-[270px] xl:mr-[600px]">
+        <ul className="flex flex-col absolute left-[37%] bg-white font-bold md:font-normal tracking-widest  pt-10 md:relative md:left-0 md:pt-0 justify-center gap-3 items-center sm:text-base md:text-xl  sm:gap-1  md:gap-0 lg:gap-8  md:flex-row md:space-x-6 sm:mr-[100px] md:mr-[160px] lg:mr-[270px] xl:mr-[500px]">
           <li>
             <Link to="/" onClick={toggleNavbar}>
               Home
@@ -41,7 +41,7 @@ const Navbar = () => {
             </Link>
           </li>
         </ul>
-        <div className="btns absolute top-0 left-[40%] pt-2 md:left-0 flex md:relative  justify-center items-center gap-3">
+        <div className="btns absolute top-0 left-[30%] pt-2 md:left-0 flex md:relative  justify-center items-center gap-3">
           <Link to="/" className="md:border md:border-[#00529B] md:border-solid  md:font-bold md:px-6 md:py-2 text-[#00529B] bg-white hover:text-white  hover:bg-[#00529B] ">Complain</Link>
           <Link to="/" className="border md:border-[#00529B] md:border-solid  font-bold md:px-6 md:py-2 px-2 py-1 bg-[#00529B] text-white hover:bg-white  hover:text-[#00529B] " >Donate</Link>
         </div>
