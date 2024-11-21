@@ -19,7 +19,9 @@ const Navbar = () => {
           isOpen ? "block" : "hidden"
         } md:flex md:items-center md:justify-around w-full md:w-auto mt-4 md:mt-0`}
       >
-        <ul className="flex flex-col absolute left-[37%] bg-white font-bold md:font-normal tracking-widest  pt-10 md:relative md:left-0 md:pt-0 justify-center gap-3 items-center sm:text-base md:text-xl  sm:gap-1  md:gap-0 lg:gap-8  md:flex-row md:space-x-6 sm:mr-[100px] md:mr-[160px] lg:mr-[270px] xl:mr-[500px]">
+        <ul
+          className="flex flex-col absolute right-0 top-[5%] bg-white z-10 px-10 py-4 gap-8 md:gap-1 xl:gap-6  font-bold md:relative md:font-normal lg:text-xl xl:tracking-widest justify-center items-center md:flex md:justify-center md:items-center md:flex-row md:space-x-6"
+        >
           <li>
             <Link to="/" onClick={toggleNavbar}>
               Home
@@ -41,10 +43,20 @@ const Navbar = () => {
             </Link>
           </li>
         </ul>
-        <div className="btns absolute top-0 left-[30%] pt-2 md:left-0 flex md:relative  justify-center items-center gap-3">
-          <Link to="/" className="md:border md:border-[#00529B] md:border-solid  md:font-bold md:px-6 md:py-2 text-[#00529B] bg-white hover:text-white  hover:bg-[#00529B] ">Complain</Link>
-          <Link to="/" className="border md:border-[#00529B] md:border-solid  font-bold md:px-6 md:py-2 px-2 py-1 bg-[#00529B] text-white hover:bg-white  hover:text-[#00529B] " >Donate</Link>
-        </div>
+      </div>
+      <div className="btns absolute top-0 left-[34%] sm:left-[44%] pt-2 md:left-0 flex md:relative  justify-center items-center gap-3">
+        <Link
+          to="/"
+          className="md:border md:border-[#00529B] md:border-solid  md:font-bold md:px-6 md:py-2 text-[#00529B] bg-white hover:text-white hover:p-1 hover:font-bold  hover:bg-[#00529B] "
+        >
+          Complain
+        </Link>
+        <Link
+          to="/"
+          className="border md:border-[#00529B] md:border-solid  font-bold md:px-6 md:py-2 px-2 py-1 bg-[#00529B] text-white hover:bg-white  hover:text-[#00529B] hover:font-normal"
+        >
+          Donate
+        </Link>
       </div>
 
       <div className="md:hidden">
