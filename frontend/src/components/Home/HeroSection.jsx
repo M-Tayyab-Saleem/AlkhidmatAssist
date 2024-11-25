@@ -21,14 +21,14 @@ const HeroSection = () => {
         <br />
         enhance public infrastructure and create a more livable environment for everyone.
       </p>
-      <div className="space-x-4 flex flex-col sm:flex-row">
-        <button className="border md:border-[#00529B] md:border-solid  font-bold md:px-6 md:py-2 px-2 py-1 bg-[#00529B] text-white hover:bg-white  hover:text-[#00529B]">
-          Donate
-        </button>
-        <button className="bg-gray-500 hover:bg-gray-700 text-white font-bold py-2 px-6 rounded">
-          Get Involved
-        </button>
-      </div>
+      <div className="flex flex-col md:flex-row items-center md:space-x-4 space-y-2 md:space-y-0">
+  <button className="border md:border-[#00529B] md:border-solid font-bold md:px-6 md:py-2 px-2 py-1 bg-[#00529B] text-white hover:bg-white hover:text-[#00529B]">
+    Donate
+  </button>
+  <button className="bg-gray-500 hover:bg-gray-700 text-white font-bold py-2 px-6 rounded">
+    Get Involved
+  </button>
+</div>
     </div>
   );
 };
