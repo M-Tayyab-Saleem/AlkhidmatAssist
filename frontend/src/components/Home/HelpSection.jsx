@@ -5,7 +5,7 @@ const HelpSection = () => {
   return (
     <section className="flex sm:justify-around sm:items-center flex-col justify-center items-center px-3   sm:flex-row lg:px-10 2xl:px-24 pt-[100px]">
       <div className="flex flex-col sm:justify-start sm::items-start xl:gap-5 lg:gap-4 md:gap-3 sm:gap-2 gap-4  pl-10">
-        <h2 className="text-xl md:text-3xl lg:text-4xl xl:text-5xl font-extrabold">
+        <h2 className="text-2xl md:text-4xl lg:text-5xl xl:text-6xl font-extrabold">
           Transforming Communities Through Essential Services
         </h2>
         <p className="text-sm md:text-base w-3/4">
@@ -20,7 +20,7 @@ const HelpSection = () => {
           </a>
         </div>
       </div>{" "}
-      <div className="p-10 sm:pr-6 md:pr-10 md:w-[1000px] lg:w-[1000px] 2xl:w-2/4">
+      <div className="p-10 sm:pr-6 md:pr-10 sm:w-[900px] md:w-[1000px] lg:w-[1000px] 2xl:w-2/4">
         <img src={ServiceImg} className="w-full" alt="Service" />
       </div>
     </section>
