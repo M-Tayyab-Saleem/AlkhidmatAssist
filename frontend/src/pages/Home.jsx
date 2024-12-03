@@ -1,7 +1,7 @@
 import React from "react";
-import HeroSection from "../components/HeroSection";
-import HomeCards from "../components/HomeCards";
-
+import HeroSection from "../components/Home/HeroSection";
+import HomeCards from "../components/Home/HomeCards";
+import JoinUsSection from "../components/Home/JoinUs"
 
 const Home = () => {
   return (
